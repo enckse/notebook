@@ -18,6 +18,6 @@ jobs:
       - name: "update repo"
         run: "apk update"
       - name: "setup deps"
-        run: "apk add make bash git mdbook"
+        run: "apk add make bash git mdbook@testing"
       - name: "build"
         run: "mdbook build"

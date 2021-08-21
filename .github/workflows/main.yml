@@ -1,0 +1,21 @@
+name: "build"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: alpine:latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: "setup repo"
+        run: "echo '@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories"
+      - name: "setup deps"
+        run: "apk add make bash git mdbook"
+      - name: "build"
+        run: "mdbook build"

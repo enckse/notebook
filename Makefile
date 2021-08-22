@@ -4,10 +4,11 @@ CI     := 0
 
 .PHONY: $(SRC)
 
-all: check build
+all: check
 
 ci:
 	make CI=1
+	mdbook build
 
 check: $(SRC)
 
@@ -16,6 +17,3 @@ $(SRC):
 ifeq ($(CI),0)
 	grep -q "$(UPDATE) $(shell git log -n 1 --format=%as $@)</sup></sub>" $@
 endif
-
-build:
-	mdbook build

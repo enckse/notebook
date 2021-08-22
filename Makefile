@@ -7,7 +7,7 @@ all: check build
 check: $(SRC)
 
 $(SRC):
-	grep -q "<sub><sup>Updated: " $@
+	grep -q "<sub><sup>Updated: $(shell git log -n 1 --format=%as $@)</sup></sub>" $@
 
 build:
 	mdbook build

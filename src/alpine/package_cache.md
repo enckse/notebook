@@ -73,4 +73,4 @@ http://<host>:9999/alpine/v3.14/main
 http://<host>:9999/alpine/v3.14/community
 ```
 
-<sub><sup>Updated: 2021-08-21</sup></sub>
+<sub><sup>Updated: 2021-08-22</sup></sub>

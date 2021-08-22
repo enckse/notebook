@@ -1,8 +1,6 @@
 acme.sh
 ===
 
-<sub><sup>Written: 2021-08-21</sup></sub>
-
 `acme.sh` can be used as a replacement to something like `certbot`. One should
 install `acme.sh` via distribution repository when possible.
 
@@ -47,3 +45,5 @@ Which map to `nginx` directives:
 | `--key-file` | `ssl_certificate_key` |
 | `--cert-file` | `ssl_trusted_certificate` |
 | `--fullchain-file` | `ssl_certificate` |
+
+<sub><sup>Updated: 2021-08-22</sup></sub>

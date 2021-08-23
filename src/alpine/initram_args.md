@@ -30,6 +30,9 @@ inconsistent in attempted usages)
 
 APK overlay file to download and apply onto the system (this is a URL)
 
+_These are generally considered "Alpine local backups" and managed via `lbu`
+if seeking more information._
+
 # alpine_repo
 
 URL to use an Alpine repository in the system

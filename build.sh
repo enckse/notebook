@@ -16,10 +16,10 @@ _summary() {
     echo "# Summary"
     echo
     _format "" "Intro" "./intro.md"
-    for f in $(find src/ -mindepth 2 -type f -name "intro.md"); do
+    for f in $(find src/ -mindepth 2 -type f -name "intro.md" | sort); do
         _parse "" "$f"
         dir=$(dirname $f)
-        for f in $(find $dir -type f -name "*.md" | grep -v "intro.md"); do
+        for f in $(find $dir -type f -name "*.md" | grep -v "intro.md" | sort); do
             _parse "    " "$f"
         done
     done

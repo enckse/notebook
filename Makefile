@@ -4,10 +4,17 @@ CI     := 0
 
 .PHONY: $(SRC)
 
-all: check
+all: setup
 
 ci:
-	make CI=1
+	make CI=1 build
+
+setup: generate check
+
+generate:
+	./build.sh
+
+build: setup
 	mdbook build
 
 check: $(SRC)

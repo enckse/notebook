@@ -14,7 +14,7 @@ import (
 	"image"
 	_ "image/jpeg"
 	_ "image/png"
-	"io/ioutil"
+	"os"
 
 	"github.com/liyue201/goqr"
 )
@@ -24,7 +24,7 @@ func main() {
 	flag.Parse()
 	path := *file
 	fmt.Printf("recognize file: %v\n", path)
-	imgdata, err := ioutil.ReadFile(path)
+	imgdata, err := os.ReadFile(path)
 	if err != nil {
 		fmt.Printf("%v\n", err)
 		return
@@ -46,4 +46,4 @@ func main() {
 }
 ```
 
-<sub><sup>Updated: 2021-09-06</sup></sub>
+<sub><sup>Updated: 2021-09-07</sup></sub>

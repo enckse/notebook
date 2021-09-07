@@ -16,8 +16,8 @@ virt-install -n myvm \
     --os-variant rhel8.4
 ```
 
-or rebuild from a disk image with _all the same_ except change (e.g. if the
-qemu xml definition accidentally gets deleted):
+or rebuild from a disk image with _all the same_ settings, by changing:
+
 ```
 virt-install -n myvm \
     ... \
@@ -29,6 +29,8 @@ virt-install -n myvm \
     ...
 ```
 
+_Which is helpful if the qemu XML file gets removed/deleted_
+
 once configuration/install is done then `console=ttyS0,115200` can be
 added to the kernel parameters and one can attach to the machine console
 via `virsh console myvm`
@@ -37,4 +39,4 @@ via `virsh console myvm`
 
 `open` on macOS understands `vnc://` (e.g. `open vnc://myserver:5900`)
 
-<sub><sup>Updated: 2021-09-02</sup></sub>
+<sub><sup>Updated: 2021-09-07</sup></sub>

@@ -1,7 +1,7 @@
 Package Cache
 ===
 
-Utilizing `nginx` to provide an Alpine Linux package cache for apk. The idea
+Utilizing `nginx` to provide an Alpine Linux package cache for apk files. The idea
 is, on a network, to use nginx to provide a common repository of cached packages
 that _any_ machine has requested that can then be re-used by subsequent requests.
 
@@ -73,4 +73,4 @@ http://<host>:9999/alpine/v3.14/main
 http://<host>:9999/alpine/v3.14/community
 ```
 
-<sub><sup>Updated: 2021-08-22</sup></sub>
+<sub><sup>Updated: 2021-09-07</sup></sub>

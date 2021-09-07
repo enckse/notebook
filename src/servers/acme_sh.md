@@ -2,11 +2,11 @@ acme.sh
 ===
 
 `acme.sh` can be used as a replacement to something like `certbot`. One should
-install `acme.sh` via distribution repository when possible.
+install `acme.sh` via the distribution package management system.
 
 ## data
 
-By default the `acme.sh` will store/manage data in the user's home folder
+By default `acme.sh` will store/manage data in the user's home folder
 under `.acme.sh` (e.g. `/home/myuser/.acme.sh`) but this data should only ever
 be touched by `acme.sh` and not used/touched by the user.
 
@@ -46,4 +46,4 @@ Which map to `nginx` directives:
 | `--cert-file` | `ssl_trusted_certificate` |
 | `--fullchain-file` | `ssl_certificate` |
 
-<sub><sup>Updated: 2021-08-22</sup></sub>
+<sub><sup>Updated: 2021-09-07</sup></sub>

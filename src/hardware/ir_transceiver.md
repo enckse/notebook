@@ -12,7 +12,7 @@ would likely require various changes to get lirc working properly.
 The reason all of this is even necessary is that `lirc` by itself has a number of tools all around dealing
 with IR reception/transmission BUT `irw`, `irrecord`, and `irsend` only understand the "remotes" (or codes) that the
 underlying `lirc` configs understand. Most of these are for things like TV remotes (e.g. power on, volume up) and not for
-anything quite as specific as a ductless AC remote. In order to _talk_ to such a different device one has to first get the
+anything quite like a ductless AC remote. In order to _talk_ to such a different device one has to first get the
 raw data from the remote in question and then "teach" lirc how to speak those codes (via configuration).
 
 ## Hardware
@@ -21,6 +21,8 @@ raw data from the remote in question and then "teach" lirc how to speak those co
 - x86-64 server (also testing on a pi4 with Alpine 3.13)
 - [Irdroid USB IR Transceiver](https://www.irdroid.com/irdroid-usb-ir-transceiver/)
 - Bryant ductless system (Models: 619PAQXXXBBMA, 619PEQXXXBBMA)
+
+_Also works in Alpine 3.14_
 
 ## Setup
 
@@ -135,4 +137,4 @@ begin remote
 end remote
 ```
 
-<sub><sup>Updated: 2021-09-05</sup></sub>
+<sub><sup>Updated: 2021-09-07</sup></sub>

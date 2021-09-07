@@ -20,6 +20,6 @@ if seeking more information._
 
 # alpine_repo
 
-URL to use an Alpine repository in the system
+URL to use as the repository in the system
 
-<sub><sup>Updated: 2021-08-29</sup></sub>
+<sub><sup>Updated: 2021-09-07</sup></sub>

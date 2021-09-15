@@ -5,4 +5,4 @@ multilingual = false
 src = "src"
 
 [output.html]
-git-repository-url = "https://voidedtech.com/cgit/notebook"
+git-repository-url = "https://voidedtech.com/git/notebook"

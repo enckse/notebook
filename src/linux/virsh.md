@@ -35,8 +35,4 @@ once configuration/install is done then `console=ttyS0,115200` can be
 added to the kernel parameters and one can attach to the machine console
 via `virsh console myvm`
 
-## macOS
-
-`open` on macOS understands `vnc://` (e.g. `open vnc://myserver:5900`)
-
-<sub><sup>Updated: 2021-09-07</sup></sub>
+<sub><sup>Updated: 2021-09-21</sup></sub>

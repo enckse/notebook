@@ -21,16 +21,4 @@ It is easier to use a "cloud ready" image that is a disk image that can be
 booted directly (and not booting an installation media/iso). Then one can set
 the kernel parameter `root=/dev/path2` as necessary to boot the rootfs object properly.
 
-# macOS
-
-## iso
-
-To create a cloud-init ready iso on macOS, place "user-data" and "meta-data" in a `configs/` directory (or any name)
-
-```
-hdiutil makehybrid -o init.iso -joliet -iso -default-volume-name cidata configs/
-```
-
-(make sure to specify `-joliet -iso` because otherwise macOS will try to use `-hfs` which many systems will not have installed/ready)
-
-<sub><sup>Updated: 2021-09-07</sup></sub>
+<sub><sup>Updated: 2021-09-21</sup></sub>

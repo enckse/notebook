@@ -37,4 +37,13 @@ hdiutil makehybrid -o init.iso -joliet -iso -default-volume-name cidata configs/
 
 (make sure to specify `-joliet -iso` because otherwise macOS will try to use `-hfs` which many systems will not have installed/ready)
 
+## mount/unmount
+
+an iso can attached or detached via `hdiutil`
+```
+hdiutil attach <file.iso> -mountpoint /Volumes/mymount
+# and then
+hdiutil detach /Volumes/mymount
+```
+
 <sub><sup>Updated: 2021-10-09</sup></sub>

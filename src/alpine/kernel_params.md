@@ -1,7 +1,7 @@
 Kernel Parameters
 ===
 
-Notes about various kernel parameters
+Notes about various kernel parameters for alpine
 
 # ip
 
@@ -19,4 +19,4 @@ to get a network connection during init:
                                                             ^ DNS
 ```
 
-<sub><sup>Updated: 2021-08-28</sup></sub>
+<sub><sup>Updated: 2021-10-09</sup></sub>

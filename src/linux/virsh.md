@@ -3,6 +3,8 @@ virsh
 
 Notes about using `virsh` and related commands
 
+# Installation
+
 Simple installation (using a vnc "display")
 ```
 virt-install -n myvm \
@@ -35,4 +37,35 @@ once configuration/install is done then `console=ttyS0,115200` can be
 added to the kernel parameters and one can attach to the machine console
 via `virsh console myvm`
 
-<sub><sup>Updated: 2021-09-21</sup></sub>
+# attaching
+
+## disks
+
+A block device can be directly attached
+```
+virsh attach-disk --domain myvm /dev/sda1 vdb --config --type disk
+```
+
+## usb device
+
+Need the code for the usb (e.g. `lsusb -v`) to place into the following file
+```
+vim usbdevice.xml
+---
+<hostdev mode='subsystem' type='usb' managed='yes'>
+    <source>
+        <vendor id='0x1234'/>
+        <product id='0x5678'/>
+    </source>
+</hostdev>
+```
+
+Which can be attached to a machine
+```
+virsh attach-device myvm --file usbdevice.xml --config --persistent
+```
+
+_The `detach-device` command can work to detach the usb device too_
+
+
+<sub><sup>Updated: 2021-10-10</sup></sub>

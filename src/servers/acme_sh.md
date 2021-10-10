@@ -1,6 +1,8 @@
 acme.sh
 ===
 
+> Remember, `acme.sh` is not an EFF/Let's Encrypt project so using it may come with some side-effects
+
 `acme.sh` can be used as a replacement to something like `certbot`. One should
 install `acme.sh` via the distribution package management system.
 
@@ -46,4 +48,4 @@ Which map to `nginx` directives:
 | `--cert-file` | `ssl_trusted_certificate` |
 | `--fullchain-file` | `ssl_certificate` |
 
-<sub><sup>Updated: 2021-09-07</sup></sub>
+<sub><sup>Updated: 2021-10-10</sup></sub>

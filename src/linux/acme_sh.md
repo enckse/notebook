@@ -48,4 +48,4 @@ Which map to `nginx` directives:
 | `--cert-file` | `ssl_trusted_certificate` |
 | `--fullchain-file` | `ssl_certificate` |
 
-<sub><sup>Updated: 2021-10-10</sup></sub>
+<sub><sup>Updated: 2021-10-12</sup></sub>

@@ -9,15 +9,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: alpine:latest
     steps:
       - uses: actions/checkout@v2
-      - name: "setup repo"
-        run: "echo '@testing https://dl-cdn.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories"
-      - name: "update repo"
-        run: "apk update"
-      - name: "setup deps"
-        run: "apk add make bash git mdbook@testing"
+      - name: "install cargo"
+        run: sudo apt-get install -y cargo
+      - name: "get mdbook"
+        run: "cargo install mdbook"
       - name: "build"
         run: "make ci"

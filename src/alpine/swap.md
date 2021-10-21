@@ -1,4 +1,4 @@
-swap
+Swap
 ===
 
 To enable swap in alpine (for manual disk setup):
@@ -21,4 +21,4 @@ enable swap
 rc-update add swap
 ```
 
-<sub><sup>Updated: 2021-10-14</sup></sub>
+<sub><sup>Updated: 2021-10-21</sup></sub>

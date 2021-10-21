@@ -1,4 +1,4 @@
-EFI Boot
+Boot (EFI)
 ===
 
 Using EFI in Alpine is supported but the documentation is not consistently available
@@ -22,4 +22,4 @@ apk del syslinux
 apk add grub grub-efi efimanager
 ```
 
-<sub><sup>Updated: 2021-08-23</sup></sub>
+<sub><sup>Updated: 2021-10-21</sup></sub>

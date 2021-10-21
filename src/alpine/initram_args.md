@@ -1,4 +1,4 @@
-Initramfs Arguments
+Boot (Arguments)
 ===
 
 Information that expands upon the documentation for Alpine's initramfs command

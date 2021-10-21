@@ -1,4 +1,4 @@
-acme.sh
+Certificates (acme.sh)
 ===
 
 > Remember, `acme.sh` is not an EFF/Let's Encrypt project so using it may come with some side-effects
@@ -48,4 +48,4 @@ Which map to `nginx` directives:
 | `--cert-file` | `ssl_trusted_certificate` |
 | `--fullchain-file` | `ssl_certificate` |
 
-<sub><sup>Updated: 2021-10-12</sup></sub>
+<sub><sup>Updated: 2021-10-21</sup></sub>

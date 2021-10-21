@@ -1,4 +1,4 @@
-Disk Management
+Disks
 ===
 
 # iso handling
@@ -46,4 +46,4 @@ hdiutil attach <file.iso> -mountpoint /Volumes/mymount
 hdiutil detach /Volumes/mymount
 ```
 
-<sub><sup>Updated: 2021-10-09</sup></sub>
+<sub><sup>Updated: 2021-10-21</sup></sub>

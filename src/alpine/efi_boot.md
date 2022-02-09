@@ -22,4 +22,4 @@ apk del syslinux
 apk add grub grub-efi efibootmgr
 ```
 
-<sub><sup>Updated: 2021-10-21</sup></sub>
+<sub><sup>Updated: 2022-02-09</sup></sub>

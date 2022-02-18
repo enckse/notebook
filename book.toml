@@ -5,4 +5,6 @@ multilingual = false
 src = "src"
 
 [output.html]
-git-repository-url = "https://voidedtech.com/git/notebook"
+git-repository-url = "https://github.com/enckse/notebook"
+default-theme = "rust"
+

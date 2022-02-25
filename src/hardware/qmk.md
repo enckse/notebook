@@ -21,8 +21,8 @@ Now, at this point, it's probably easier to run `dfu-programmer` against each ha
 
 ```
 sudo dfu-programmer ATmega32U4 erase --force
-sudo dfu-programmer ATmega32U4 flash --force $(HEX)
-sudo dfu-programmer ATmega32U4  reset 
+sudo dfu-programmer ATmega32U4 flash --force enckse.hex
+sudo dfu-programmer ATmega32U4 reset
 ```
 
 Of course different keyboards will require different, specific tools but QMK itself is definitely trying to cover a LOT more than

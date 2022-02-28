@@ -9,7 +9,9 @@ An example, on Alpine, of using `ifb` with `tc` to try and shape some traffic
 
 ```
 #!/bin/bash
+# the internal "lan" interface LAN devices are "attached" to
 LAN="lan0"
+# the ifb device to create/use
 IFB="ifb0"
 
 # make sure the ifb device exists

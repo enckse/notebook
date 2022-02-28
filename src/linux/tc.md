@@ -1,7 +1,7 @@
 Linux Traffic Control (tc)
 ===
 
-Any useful notes about using `tc`
+Any useful notes about using `tc`, one can use `bmon` to interactively review the impact of playing with `tc`
 
 # basic traffic shaping
 

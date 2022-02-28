@@ -5,7 +5,7 @@ Any useful notes about using `tc`
 
 # basic traffic shaping
 
-An example, on Alpine, of using `ifb` with `tc` to try and shape some traffic
+An example, on Alpine Linux running as a router, of using `ifb` with `tc` to try and shape some traffic (in both directions)
 
 ```
 #!/bin/bash

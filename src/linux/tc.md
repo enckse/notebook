@@ -1,4 +1,4 @@
-tc
+Linux Traffic Control (tc)
 ===
 
 Any useful notes about using `tc`

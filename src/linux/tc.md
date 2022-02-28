@@ -1,4 +1,4 @@
-Linux Traffic Control (tc)
+Traffic Control (tc)
 ===
 
 Any useful notes about using `tc`, one can use `bmon` to interactively review the impact of playing with `tc`

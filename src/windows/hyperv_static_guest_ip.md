@@ -39,3 +39,5 @@ iface eth0 inet static
 ```
 
 _don't forget to also configure a DNS resolver_
+
+<sub><sup>Updated: 2022-06-22</sup></sub>

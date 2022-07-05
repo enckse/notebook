@@ -1,12 +1,6 @@
 name: "build"
 
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
-  schedule:
-    - cron: '0 0 * * *'
+on: [push, pull_request]
 
 jobs:
   build:
@@ -23,7 +17,3 @@ jobs:
         run: "apk add make bash git mdbook@testing"
       - name: "build"
         run: "make ci"
-      - uses: actions/upload-artifact@v3
-        with:
-          name: notebook
-          path: book/

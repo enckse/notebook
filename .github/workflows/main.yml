@@ -21,3 +21,7 @@ jobs:
         run: "apk add make bash git mdbook@testing"
       - name: "build"
         run: "make ci"
+      - uses: actions/upload-artifact@v3
+        with:
+          name: notebook
+          path: book/

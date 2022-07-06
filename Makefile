@@ -1,13 +1,13 @@
 SRC    := $(shell find src/ -type f | grep -v "SUMMARY.md" | grep -v "intro.md")
 UPDATE := <sub><sup>Updated:
-CI     := 0
+DEV    := 1
 
 .PHONY: $(SRC)
 
 all: setup
 
-ci:
-	make CI=1 build
+release:
+	make DEV=0 build
 
 setup: generate check
 
@@ -21,6 +21,6 @@ check: $(SRC)
 
 $(SRC):
 	grep -q "$(UPDATE)" $@
-ifeq ($(CI),0)
+ifeq ($(DEV),1)
 	grep -q "$(UPDATE) $(shell git log -n 1 --format=%as $@)</sup></sub>" $@
 endif

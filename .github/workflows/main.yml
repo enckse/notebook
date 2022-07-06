@@ -16,4 +16,4 @@ jobs:
       - name: "setup deps"
         run: "apk add make bash git mdbook@testing"
       - name: "build"
-        run: "make ci"
+        run: "make release"
